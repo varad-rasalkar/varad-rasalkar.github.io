@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varad Rasalkar</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            border-right: 2px solid #ddd;
+        }
+
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto; /* Ensures horizontal centering */
+}
+
+        .sidebar h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .sidebar h3 {
+            font-size: 1.1em;
+            color: grey;
+            margin: 5px 0;
+        }
+
+        .contact-info {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Section */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #ddd;
+                padding-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#" onclick="showTab('about')">About Me</a>
+        <a href="#" onclick="showTab('background')">Background</a>
+        <a href="#" onclick="showTab('projects')">Projects</a>
+        <a href="#" onclick="showTab('leadership')">Leadership Experience</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <img src="picture.png" alt="Varad Rasalkar">
+            <h2>Varad Rasalkar</h2>
+            <h3>Aspiring Software Engineer</h3>
+            <ul class="contact-info">
+                <li>📧 <a href="mailto:varadr2@illinois.edu">Email</a></li>
+                <li>📞 <a href="tel:+16309811921">Phone</a></li>
+                <li>🔗 <a href="https://www.linkedin.com/in/varad-rasalkar" target="_blank">LinkedIn</a></li>
+                <li>📄 <a href="https://varad-rasalkar-resume.tiiny.site/" target="_blank">Resume</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content Section -->
+        <section class="content">
+            <div id="about" class="tab-content active">
+                <h2>About Me</h2>
+                <p>I am currently working as a Software Engineer at Illinois Business Consulting, where I leverage my expertise in data-driven software engineering, automation, and cloud computing to develop innovative solutions for business challenges. I am pursuing a Bachelor of Science in Computer Science and Economics with a Minor in Statistics at the University of Illinois Urbana-Champaign.</p>
+                
+                <p>My technical interests span across financial technology, risk analysis, and AI-driven automation. Through my coursework in econometrics, computer science, and statistical modeling, I have developed a strong foundation in predictive analytics and financial risk assessment. I specialize in implementing machine learning techniques such as time-series forecasting, anomaly detection, and Monte Carlo simulations to optimize financial decision-making. I have worked with Python, TensorFlow, Scikit-learn, and SQL to build data-driven models that enhance financial operations.</p>
+                
+                <p>At Staples, as a Software Engineering Intern, I optimized SQL queries and migrated legacy Oracle SQL databases to Snowflake, reducing query execution times by 30%. Additionally, I developed a promotional email campaign game using Python and HTML, boosting customer engagement. As a Data Science Intern at the University of Illinois Research Park, I designed real-time dashboards using Tableau and PowerBI, automated ETL pipelines, and implemented data transformations that improved accuracy across thousands of financial records.</p>
+                
+                <p>Beyond my academic and professional experience, I am passionate about applying AI and automation to financial markets. My work in risk analysis involves developing computational models that quantify market volatility and assess portfolio risks. I have experience with Monte Carlo simulations, stochastic modeling, and statistical arbitrage strategies, using Python (pandas, NumPy, SciPy), SQL, and cloud-based data architectures like AWS and Snowflake.</p>
+                
+                <p>I am always excited about new challenges that push the boundaries of data science, software engineering, and economic analysis.</p>
+            </div>
+
+            <div id="background" class="tab-content">
+                <h2>Background</h2>
+                <h3>Education</h3>
+                <p><strong>University of Illinois Urbana-Champaign</strong> (Aug. 2022 – May 2026)<br> Bachelor of Science in Computer Science and Economics, Minor in Statistics</p>
+                
+                <h3>Experience</h3>
+                <p><strong>Software Engineering Intern</strong> (May 2024 – Aug. 2024)<br> 
+                    <strong>Staples</strong> - Engineered optimized SQL queries by migrating Oracle SQL to Snowflake, reducing query execution time by 30%. Developed and deployed an interactive promotional game using Python and HTML, increasing user engagement by 15%. Automated SQL job documentation, cutting maintenance troubleshooting time by 40%.
+                 </p>
+                 
+                 <p><strong>Data Science Intern</strong> (Jan. 2024 – May 2024)<br> 
+                    <strong>University of Illinois Research Park</strong> - Built 50+ interactive dashboards using Tableau and PowerBI, transforming raw data into actionable insights. Developed Python-based ETL pipelines that streamlined data processing across 3000+ fields, improving data integrity and reducing processing time by 10 hours weekly.
+                 </p>
+                 
+                 <p><strong>Senior Consultant & Software Engineer</strong> (Jan. 2023 – Present)<br> 
+                    <strong>Illinois Business Consulting</strong> - Designed and deployed an AI-powered chatbot using Python, OpenAI GPT-3.5, and Flask, enhancing knowledge retrieval efficiency. Integrated the chatbot into Slack via the Slack SDK, improving organizational communication by 25%. Constructed a high-speed vector database with cosine similarity search, reducing data retrieval time by 50%.
+                 </p>
+                
+                
+                <h3>Technical Skills</h3>
+                <p><strong>Languages:</strong> Java, Python, C, C++, SQL, JavaScript, HTML/CSS, R</p>
+                <p><strong>Frameworks:</strong> React, Node.js, Flask, WordPress, Django</p>
+                <p><strong>Developer Tools:</strong> Git, Docker, MS Azure, GCP, VS Code, Snowflake, Tableau, Salesforce</p>
+            </div>
+
+            <div id="projects" class="tab-content">
+                <h2>Projects</h2>
+                    <h3>PhishPatrol (Aug 2024 - Oct 2024)</h3>
+                    <p>PhishPatrol is an email scam detection system trained using a Random Forest classifier model. It analyzes email metadata and content features to identify phishing attempts with high accuracy. The system is designed to enhance cybersecurity by integrating with email services to provide real-time scam detection.</p>
+                    <p><a href="https://github.com/varad-rasalkar/PhishPatrol.git" target="_blank">GitHub Repository</a></p>
+                    
+                    <h3>Illinois Business Consulting Slack Chatbot (Jan 2024 - Present)</h3>
+                    <p>Developed a Slack-integrated chatbot using Python, Slack SDK, and OpenAI GPT-3.5. The chatbot employs a Naive Bayes classifier for document similarity search, leveraging a vector database of text embeddings from past project documents stored on Azure. The chatbot improves knowledge retrieval and enhances organizational efficiency within Illinois Business Consulting.</p>
+                    
+                    <h3>UIUC Apartments Scraper (Sep 2023 - Oct 2023)</h3>
+                    <p>Built a web scraper that aggregates apartment listings in the Champaign-Urbana area. The system processes multiple apartment websites, extracting data such as floor plans, pricing, availability, addresses, and room details. The collected data is stored in a structured CSV file to provide UIUC students with a centralized and efficient apartment search tool.</p>
+                    
+                    <h3>Staples Promotional Email Tracking (May 2024 - Aug 2024)</h3>
+                    <p>Reverse-engineered Klaviyo email templates used by Staples for promotional campaigns. Created a Python-based tracking system leveraging Klaviyo API to analyze user engagement, track promotional code usage, and measure conversion rates. Integrated the tracking system with SQL and Snowflake to enhance Staples’ data analytics and optimize future marketing campaigns.</p>
+            </div>
+
+            <div id="leadership" class="tab-content">
+                <h2>Leadership Experience</h2>
+                <p><strong>Course Assistant - CS 124 (Intro to Computer Science in Java)</strong></p>
+                <p>As a course assistant for CS 124 at the University of Illinois Urbana-Champaign, I am responsible for guiding students through foundational computer science concepts, Java programming, and algorithmic problem-solving. I assist in debugging code, clarifying complex topics, and ensuring students grasp fundamental programming paradigms. My role enhances my ability to teach technical concepts effectively and provide mentorship in a structured learning environment.</p>
+                    
+                <p><strong>Senior Consultant & Leadership Team - Illinois Business Consulting</strong></p>
+                <p>At Illinois Business Consulting, I hold a leadership position where I oversee technical initiatives, including leading the development of a Slack-integrated chatbot. I directed a team in designing an AI-powered system utilizing Python, OpenAI’s GPT-3.5, and Azure for document storage and retrieval. By implementing a vector database and a Naive Bayes classifier, the chatbot significantly improved knowledge accessibility within the organization. My leadership in this project involved structuring the development pipeline, coordinating cross-functional efforts, and ensuring high-impact results.</p>
+                    
+                <p><strong>Data Science Intern - University of Illinois Research Park</strong></p>
+                <p>As a Data Science Intern at the Research Park, I was responsible for managing and mentoring two other interns while collaborating on a team-wide effort to develop data-driven insights. I led initiatives in optimizing data pipelines, automating reporting processes, and deploying machine learning models using Python and SQL. My leadership extended to fostering collaboration, ensuring alignment between project goals and business needs, and delivering high-quality data solutions that improved operational efficiency.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- JavaScript for Tab Navigation -->
+    <script>
+        function showTab(tabId) {
+            var tabs = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove('active');
+            }
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
